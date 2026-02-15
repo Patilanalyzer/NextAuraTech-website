@@ -86,7 +86,7 @@ margin-bottom:50px;
 
 .features{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:30px;
 }
 
@@ -96,6 +96,15 @@ padding:30px;
 border-radius:16px;
 box-shadow:0 4px 20px rgba(0,0,0,0.05);
 text-align:center;
+}
+
+.card img{
+margin-bottom:15px;
+}
+
+.card h3{
+margin-bottom:10px;
+font-size:18px;
 }
 
 .product-block{
@@ -161,7 +170,7 @@ font-size:17px;
 <h1>India’s First Screen-Free Safety Band</h1>
 <p>
 Designed to Protect. Not Distract.<br><br>
-Real-time GPS tracking, SOS alerts and fall detection — 
+Real-time GPS tracking, SOS alerts and fall detection —
 built for children, women and elderly.
 </p>
 <br>
@@ -176,11 +185,10 @@ built for children, women and elderly.
 <ul style="margin-bottom:20px;line-height:2;">
 <li>✔ Screen-Free Design</li>
 <li>✔ Live GPS Tracking</li>
-<li>✔ SOS Emergency</li>
-<li>✔ Geo-Fence Alerts</li>
+<li>✔ One-Touch SOS</li>
+<li>✔ Safe Route Monitoring</li>
 <li>✔ 3–4 Day Battery</li>
 <li>✔ Made in India 🇮🇳</li>
-<li>✔ Privacy Focused</li>
 </ul>
 <a href="#" class="btn">Pre-Book Now</a>
 </div>
@@ -190,51 +198,80 @@ built for children, women and elderly.
 <section class="section">
 <h2>Powerful Features</h2>
 <div class="features">
-<div class="card">Live GPS Tracking</div>
-<div class="card">One-Touch SOS</div>
-<div class="card">Fall Detection</div>
-<div class="card">Geo-Fence Alerts</div>
-<div class="card">Tamper Alert</div>
-<div class="card">Water Resistant</div>
-<div class="card">3–4 Day Battery</div>
-<div class="card">Safe Route Monitoring</div>
+
+  <div class="card">
+    <img src="icons/gps.png" width="60">
+    <h3>Live GPS Tracking</h3>
+    <p>Real-time location tracking with instant updates.</p>
+  </div>
+
+  <div class="card">
+    <img src="icons/sos.png" width="60">
+    <h3>One-Touch SOS</h3>
+    <p>Instant emergency alert with siren and flashing light.</p>
+  </div>
+
+  <div class="card">
+    <img src="icons/fall.png" width="60">
+    <h3>Fall Detection</h3>
+    <p>Automatic alert if sudden fall is detected.</p>
+  </div>
+
+  <div class="card">
+    <img src="icons/geofence.png" width="60">
+    <h3>Geo-Fence Alerts</h3>
+    <p>Notification when entering or leaving safe zones.</p>
+  </div>
+
+  <div class="card">
+    <img src="icons/tamper.png" width="60">
+    <h3>Tamper Alert</h3>
+    <p>Alert if band is forcefully removed.</p>
+  </div>
+
+  <div class="card">
+    <img src="icons/water.png" width="60">
+    <h3>Water Resistant</h3>
+    <p>Designed for daily wear and light water exposure.</p>
+  </div>
+
+  <div class="card">
+    <img src="icons/battery.png" width="60">
+    <h3>3–4 Day Battery</h3>
+    <p>Long-lasting power for continuous safety.</p>
+  </div>
+
+  <div class="card">
+    <img src="icons/route.png" width="60">
+    <h3>Safe Route Monitoring</h3>
+    <p>Guided direction toward nearby safer public locations.</p>
+  </div>
+
 </div>
-</section> 
+</section>
+
 <section class="section">
 <h2>Who Is SafeBand A Must-Have For?</h2>
-
 <div class="features">
 
   <div class="card">
     <h3>👩 Night Shift Women</h3>
-    <p>
-      Late-night travel protection with SOS, siren alert and safe route guidance.
-      Because every night shift deserves safety.
-    </p>
+    <p>Late-night travel protection with SOS and route guidance.</p>
   </div>
 
   <div class="card">
     <h3>🎓 Girls Living Alone</h3>
-    <p>
-      Real-time tracking and emergency support for students in big cities.
-      Stay independent. Stay protected.
-    </p>
+    <p>Real-time tracking and emergency support in big cities.</p>
   </div>
 
   <div class="card">
     <h3>👴 Elderly Living Alone</h3>
-    <p>
-      Fall detection, medicine reminders and instant SOS alerts.
-      Care that travels across cities.
-    </p>
+    <p>Fall detection and medicine reminders for daily care.</p>
   </div>
 
   <div class="card">
     <h3>👦 School Children</h3>
-    <p>
-      GPS tracking and geo-fence alerts for safe school travel.
-      Freedom with protection.
-    </p>
+    <p>GPS tracking and geo-fence alerts for safe travel.</p>
   </div>
 
 </div>
@@ -244,26 +281,17 @@ built for children, women and elderly.
 <h2>How It Works</h2>
 <div class="features">
 <div class="card">1️⃣ Wear SafeBand</div>
-<div class="card">2️⃣ Connect to Family App</div>
-<div class="card">3️⃣ Real-Time Monitoring</div>
-<div class="card">4️⃣ Emergency Alerts</div>
-</div>
-</section>
-
-<section class="section">
-<h2>Who Is SafeBand For?</h2>
-<div class="features">
-<div class="card">For Children</div>
-<div class="card">For Women</div>
-<div class="card">For Elderly</div>
+<div class="card">2️⃣ Connect to Guardian App</div>
+<div class="card">3️⃣ Monitor in Real-Time</div>
+<div class="card">4️⃣ Get Instant Emergency Alerts</div>
 </div>
 </section>
 
 <section class="section">
 <h2>About NextAura Technologies</h2>
 <p style="text-align:center;max-width:700px;margin:auto;">
-NextAura Technologies builds next-generation safety products for Indian families.
-Our mission is to make personal safety simple, affordable and accessible.
+NextAura Technologies builds next-generation safety wearables
+focused on protection, simplicity and real-world reliability.
 </p>
 </section>
 
