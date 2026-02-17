@@ -52,6 +52,11 @@ border-radius:30px;
 text-decoration:none;
 font-weight:600;
 display:inline-block;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#0c5f5a;
 }
 
 .hero{
@@ -125,9 +130,11 @@ margin-top:10px;
 <a href="#">Features</a>
 <a href="#">Pre-Book</a>
 <a href="#">FAQ</a>
-<a href="#" class="btn">Pre-Book ₹499</a>
+<a href="#" class="btn">Pre-Book Now</a>
 </nav>
 </header>
+
+<!-- HERO -->
 
 <section class="hero">
 <h1>India’s First Screen-Free Safety Band</h1>
@@ -137,46 +144,77 @@ Live GPS tracking, SOS alerts, fall detection and smart care features —
 built for children, women and elderly.
 </p>
 <br>
-<a href="#" class="btn">Pre-Book Now</a>
+<a href="#" class="btn">Pre-Book Today</a>
 </section>
 
-<!-- STUDENT PREBOOK SECTION -->
+<!-- PRE BOOK OFFERS -->
 
-<section style="padding:70px 8%; background:#f8fafc; text-align:center;">
-  <h2>🎓 Student Safety Launch Offer</h2>
+<section style="padding:80px 8%; background:#f8fafc; text-align:center;">
+<h2>Launch Pre-Booking Offers</h2>
+<p style="color:#555; max-width:700px; margin:auto; line-height:1.6;">
+Limited Early Access Pricing. Secure your unit before official launch.
+</p>
 
-  <p style="font-size:20px; margin-bottom:10px;">
-    Pre-Book SafeBand Lite for just <strong style="color:#0f766e;">₹499</strong>
-  </p>
+<br><br>
 
-  <p style="max-width:700px; margin:auto; color:#555; line-height:1.6;">
-    Limited Early Access Offer. Final Price ₹2999.
-    Pay ₹499 now and secure priority launch delivery.
-  </p>
+<div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:40px;">
 
-  <br>
+<!-- STUDENT LITE -->
+<div style="background:#ffffff; padding:40px; border-radius:18px; box-shadow:0 4px 25px rgba(0,0,0,0.06);">
+<h3>🎓 SafeBand Lite (Students)</h3>
+<p style="font-size:22px; margin:15px 0;">
+Pre-Book for <strong style="color:#0f766e;">₹499</strong>
+</p>
+<p style="color:#777;">Final Price ₹2999 • No Screen • Exam-Safe</p>
 
-  <ul style="list-style:none; padding:0; font-size:15px; color:#555; line-height:2;">
-    <li>✔ Live GPS Tracking</li>
-    <li>✔ One-Touch SOS Emergency</li>
-    <li>✔ Geo-Fence Alerts</li>
-    <li>✔ Tamper Detection</li>
-    <li>✔ Safe Route Monitoring</li>
-    <li>✔ 3–4 Day Battery Life</li>
-    <li>✔ Water Resistant Design</li>
-    <li>✔ Activity & Temperature Monitoring</li>
-    <li>✔ Exam-Safe (No Screen, No Apps)</li>
-  </ul>
+<ul style="list-style:none; padding:0; font-size:14px; color:#555; line-height:1.9; text-align:left; margin-top:20px;">
+<li>✔ Live GPS Tracking</li>
+<li>✔ One-Touch SOS</li>
+<li>✔ Geo-Fence Alerts</li>
+<li>✔ Tamper Detection</li>
+<li>✔ Safe Route Monitoring</li>
+<li>✔ 3–4 Day Battery</li>
+<li>✔ Water Resistant</li>
+<li>✔ Activity & Temperature Monitoring</li>
+<li>✔ No Screen – No Distraction</li>
+</ul>
 
-  <br>
-  <a href="#" class="btn" style="font-size:18px;">Pre-Book Now for ₹499</a>
+<br>
+<a href="#" class="btn">Pre-Book ₹499</a>
+</div>
 
-  <p style="margin-top:15px; font-size:13px; color:#888;">
-    Limited 1000 Units • Launch Batch Only
-  </p>
+<!-- PRO VERSION -->
+<div style="background:#ffffff; padding:40px; border-radius:18px; box-shadow:0 4px 25px rgba(0,0,0,0.06);">
+<h3>👩👴 SafeBand Pro (Women & Elderly)</h3>
+<p style="font-size:22px; margin:15px 0;">
+Pre-Book for <strong style="color:#0f766e;">₹999</strong>
+</p>
+<p style="color:#777;">Final Price ₹4999 • AMOLED Display</p>
+
+<ul style="list-style:none; padding:0; font-size:14px; color:#555; line-height:1.9; text-align:left; margin-top:20px;">
+<li>✔ Live GPS Tracking</li>
+<li>✔ One-Touch SOS + Smart Siren</li>
+<li>✔ Safe Route Arrow Guidance</li>
+<li>✔ Fall Detection</li>
+<li>✔ Medicine & Meal Alerts</li>
+<li>✔ Auto Emergency Call</li>
+<li>✔ Temperature Monitoring</li>
+<li>✔ Activity & Health Tracking</li>
+</ul>
+
+<br>
+<a href="#" class="btn">Pre-Book ₹999</a>
+</div>
+
+</div>
+
+<br><br>
+<p style="font-size:13px; color:#888;">
+Limited Launch Batch • Priority Delivery • Exclusive Early Access
+</p>
 </section>
 
-<!-- POWERFUL FEATURES -->
+<!-- FEATURES -->
 
 <section class="section">
 <h2>Powerful Safety Features</h2>
@@ -184,22 +222,22 @@ built for children, women and elderly.
 
 <div class="card">
 <h3>Live GPS Tracking</h3>
-<p>Real-time location updates for guardians.</p>
+<p>Real-time guardian monitoring with instant updates.</p>
 </div>
 
 <div class="card">
 <h3>One-Touch SOS + Smart Siren</h3>
-<p>Instant emergency alert with flashing light and loud siren.</p>
+<p>Immediate alert with loud siren and flashing LED.</p>
 </div>
 
 <div class="card">
 <h3>Fall Detection</h3>
-<p>Automatic emergency alert if sudden fall is detected.</p>
+<p>Automatic alert in case of sudden impact or fall.</p>
 </div>
 
 <div class="card">
 <h3>Safe Route Guidance</h3>
-<p>Suggested safer direction during emergency situations.</p>
+<p>Direction assistance during emergency situations.</p>
 </div>
 
 <div class="card">
@@ -209,13 +247,13 @@ built for children, women and elderly.
 
 <div class="card">
 <h3>Geo-Fence & Tamper Alert</h3>
-<p>Get notified if safe zones are crossed or band is removed.</p>
+<p>Notifications when safe zones are crossed.</p>
 </div>
 
 </div>
 </section>
 
-<!-- MUST HAVE SECTION -->
+<!-- MUST HAVE -->
 
 <section class="section">
 <h2>Who Is SafeBand A Must-Have For?</h2>
@@ -224,22 +262,22 @@ built for children, women and elderly.
 
 <div class="card">
 <h3>👩 Night Shift Women</h3>
-<p>Emergency protection with siren and safe route guidance.</p>
+<p>Emergency safety with siren and route guidance.</p>
 </div>
 
 <div class="card">
 <h3>🎓 Girls Living Alone</h3>
-<p>Stay independent with real-time guardian tracking.</p>
+<p>Stay independent with live guardian tracking.</p>
 </div>
 
 <div class="card">
 <h3>👴 Elderly Living Alone</h3>
-<p>Fall detection and daily care reminders for peace of mind.</p>
+<p>Daily health reminders and fall alerts.</p>
 </div>
 
 <div class="card">
 <h3>👦 School Children</h3>
-<p>Safe school travel with GPS and SOS alerts.</p>
+<p>Safe school commute with GPS and SOS alerts.</p>
 </div>
 
 </div>
@@ -253,7 +291,7 @@ built for children, women and elderly.
 <div class="card">1️⃣ Wear SafeBand</div>
 <div class="card">2️⃣ Connect to Guardian App</div>
 <div class="card">3️⃣ Monitor in Real-Time</div>
-<div class="card">4️⃣ Get Instant Alerts</div>
+<div class="card">4️⃣ Receive Instant Alerts</div>
 </div>
 </section>
 
@@ -262,9 +300,9 @@ built for children, women and elderly.
 <section class="section">
 <h2>About NextAura Technologies</h2>
 <p style="text-align:center; max-width:700px; margin:auto; line-height:1.6;">
-NextAura Technologies builds next-generation safety wearables
-focused on protection, simplicity and real-world reliability.
-Our mission is to make personal safety accessible and intelligent.
+NextAura Technologies builds intelligent safety wearables focused on protection,
+simplicity and real-world reliability. Our mission is to create a safer future
+for children, women and elderly across the world.
 </p>
 </section>
 
