@@ -71,13 +71,13 @@ line-height:1.6;
 }
 
 .section{
-padding:80px 8%;
+padding:100px 8%;
 }
 
 .section h2{
 text-align:center;
-font-size:34px;
-margin-bottom:50px;
+font-size:36px;
+margin-bottom:60px;
 }
 
 .features{
@@ -94,18 +94,9 @@ box-shadow:0 4px 20px rgba(0,0,0,0.06);
 text-align:center;
 }
 
-/* Bigger Icons */
 .card img{
 width:120px;
 margin-bottom:20px;
-}
-
-/* Bigger Product Images */
-.product-img{
-width:100%;
-max-width:550px;
-border-radius:20px;
-box-shadow:0 10px 30px rgba(0,0,0,0.08);
 }
 
 .pricing-box{
@@ -131,6 +122,7 @@ margin-top:10px;
 @media(max-width:900px){
 .hero h1{font-size:32px;}
 .hero p{font-size:16px;}
+.section h2{font-size:28px;}
 }
 </style>
 </head>
@@ -161,24 +153,23 @@ built for children, women and elderly.
 <a href="#pricing" class="btn" style="background:#111;">Pro ₹999</a>
 </section>
 
-<!-- PRODUCT SECTION -->
+<!-- MAIN PRODUCT SHOWCASE -->
 
-<section class="section">
+<section class="section" style="text-align:center;">
 <h2>Meet SafeBand</h2>
 
-<div class="features">
-
-<div class="card">
-<img src="product-main.jpg" alt="SafeBand Main" class="product-img">
-<p>Premium Safety Design</p>
+<div style="margin-top:50px;">
+    <img src="product-main.jpg"
+         alt="SafeBand Main"
+         style="width:100%; max-width:850px; border-radius:30px; box-shadow:0 25px 60px rgba(0,0,0,0.15);">
 </div>
 
-<div class="card">
-<img src="colors.jpg" alt="SafeBand Colors" class="product-img">
-<p>Available Color Options</p>
+<div style="margin-top:60px;">
+    <img src="colors.jpg"
+         alt="SafeBand Colors"
+         style="width:100%; max-width:650px; border-radius:25px; box-shadow:0 15px 40px rgba(0,0,0,0.1);">
 </div>
 
-</div>
 </section>
 
 <!-- PRICING -->
@@ -196,7 +187,7 @@ Limited Early Access Reservation. Secure your SafeBand before official launch.
 
 <div class="pricing-box">
 <h3>🎓 SafeBand Lite (Students)</h3>
-<p style="font-size:28px;margin:15px 0;color:#0f766e;">₹499</p>
+<p style="font-size:30px;margin:15px 0;color:#0f766e;">₹499</p>
 <p>No Screen • Exam-Safe Design</p>
 <br>
 <a href="#" class="btn">Reserve for ₹499</a>
@@ -204,7 +195,7 @@ Limited Early Access Reservation. Secure your SafeBand before official launch.
 
 <div class="pricing-box">
 <h3>👩👴 SafeBand Pro (Women & Elderly)</h3>
-<p style="font-size:28px;margin:15px 0;color:#0f766e;">₹999</p>
+<p style="font-size:30px;margin:15px 0;color:#0f766e;">₹999</p>
 <p>Smart AMOLED Display • Advanced Protection</p>
 <br>
 <a href="#" class="btn">Reserve for ₹999</a>
