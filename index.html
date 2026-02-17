@@ -9,50 +9,125 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
 body{background:#fff;color:#111;}
+
 header{
-display:flex;justify-content:space-between;align-items:center;
-padding:20px 8%;background:#fff;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#fff;
 box-shadow:0 2px 10px rgba(0,0,0,0.05);
-position:sticky;top:0;z-index:1000;
+position:sticky;
+top:0;
+z-index:1000;
 }
-.logo{font-weight:800;font-size:22px;color:#0f766e;}
-nav a{margin:0 15px;text-decoration:none;color:#444;font-weight:500;}
+
+.logo{
+font-weight:800;
+font-size:22px;
+color:#0f766e;
+}
+
+nav a{
+margin:0 15px;
+text-decoration:none;
+color:#444;
+font-weight:500;
+}
+
 .btn{
-background:#0f766e;color:#fff;padding:12px 22px;
-border-radius:30px;text-decoration:none;font-weight:600;
-transition:0.3s;display:inline-block;
+background:#0f766e;
+color:#fff;
+padding:12px 24px;
+border-radius:30px;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+display:inline-block;
 }
-.btn:hover{background:#0c5f5a;}
+
+.btn:hover{
+background:#0c5f5a;
+}
+
 .hero{
-padding:120px 8%;text-align:center;
+padding:120px 8%;
+text-align:center;
 background:linear-gradient(135deg,#0f766e,#14b8a6);
 color:#fff;
 }
-.hero h1{font-size:48px;font-weight:800;margin-bottom:20px;}
-.hero p{font-size:18px;max-width:750px;margin:auto;line-height:1.6;}
-.section{padding:80px 8%;}
-.section h2{text-align:center;font-size:32px;margin-bottom:50px;}
+
+.hero h1{
+font-size:48px;
+font-weight:800;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+max-width:750px;
+margin:auto;
+line-height:1.6;
+}
+
+.section{
+padding:80px 8%;
+}
+
+.section h2{
+text-align:center;
+font-size:34px;
+margin-bottom:50px;
+}
+
 .features{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:40px;
 }
+
 .card{
-background:#fff;padding:30px;border-radius:18px;
+background:#fff;
+padding:30px;
+border-radius:18px;
 box-shadow:0 4px 20px rgba(0,0,0,0.06);
 text-align:center;
 }
-.card img{width:90px;margin-bottom:20px;}
+
+/* Bigger Icons */
+.card img{
+width:120px;
+margin-bottom:20px;
+}
+
+/* Bigger Product Images */
+.product-img{
+width:100%;
+max-width:550px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
 .pricing-box{
-background:#f8fafc;padding:40px;border-radius:20px;
+background:#f8fafc;
+padding:40px;
+border-radius:20px;
 box-shadow:0 4px 20px rgba(0,0,0,0.05);
 text-align:center;
 }
+
 .footer{
-background:#0f172a;color:#fff;padding:60px 8%;
+background:#0f172a;
+color:#fff;
+padding:60px 8%;
 text-align:center;
 }
-.footer p{color:#aaa;margin-top:10px;}
+
+.footer p{
+color:#aaa;
+margin-top:10px;
+}
+
 @media(max-width:900px){
 .hero h1{font-size:32px;}
 .hero p{font-size:16px;}
@@ -86,7 +161,7 @@ built for children, women and elderly.
 <a href="#pricing" class="btn" style="background:#111;">Pro ₹999</a>
 </section>
 
-<!-- PRODUCT IMAGES -->
+<!-- PRODUCT SECTION -->
 
 <section class="section">
 <h2>Meet SafeBand</h2>
@@ -94,12 +169,12 @@ built for children, women and elderly.
 <div class="features">
 
 <div class="card">
-<img src="product-main.jpg" alt="SafeBand Main">
+<img src="product-main.jpg" alt="SafeBand Main" class="product-img">
 <p>Premium Safety Design</p>
 </div>
 
 <div class="card">
-<img src="colors.jpg" alt="SafeBand Colors">
+<img src="colors.jpg" alt="SafeBand Colors" class="product-img">
 <p>Available Color Options</p>
 </div>
 
@@ -188,8 +263,6 @@ Limited Launch Batch • Official Pricing Revealed at Launch
 
 </div>
 </section>
-
-<!-- FOOTER -->
 
 <footer class="footer">
 <h3>SafeBand</h3>
