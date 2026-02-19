@@ -9,46 +9,20 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
 body{background:#fff;color:#111;}
-
 header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 8%;
-background:#fff;
+display:flex;justify-content:space-between;align-items:center;
+padding:20px 8%;background:#fff;
 box-shadow:0 2px 10px rgba(0,0,0,0.05);
-position:sticky;
-top:0;
-z-index:1000;
+position:sticky;top:0;z-index:1000;
 }
-
-.logo{
-font-weight:800;
-font-size:22px;
-color:#0f766e;
-}
-
-nav a{
-margin:0 15px;
-text-decoration:none;
-color:#444;
-font-weight:500;
-}
-
+.logo{font-weight:800;font-size:22px;color:#0f766e;}
+nav a{margin:0 15px;text-decoration:none;color:#444;font-weight:500;}
 .btn{
-background:#0f766e;
-color:#fff;
-padding:12px 24px;
-border-radius:30px;
-text-decoration:none;
-font-weight:600;
-transition:0.3s;
-display:inline-block;
+background:#0f766e;color:#fff;padding:12px 22px;
+border-radius:30px;text-decoration:none;font-weight:600;
+transition:0.3s;display:inline-block;
 }
-
-.btn:hover{
-background:#0c5f5a;
-}
+.btn:hover{background:#0c5f5a;}
 
 .hero{
 padding:120px 8%;
@@ -56,29 +30,11 @@ text-align:center;
 background:linear-gradient(135deg,#0f766e,#14b8a6);
 color:#fff;
 }
+.hero h1{font-size:48px;font-weight:800;margin-bottom:20px;}
+.hero p{font-size:18px;max-width:750px;margin:auto;line-height:1.6;}
 
-.hero h1{
-font-size:48px;
-font-weight:800;
-margin-bottom:20px;
-}
-
-.hero p{
-font-size:18px;
-max-width:750px;
-margin:auto;
-line-height:1.6;
-}
-
-.section{
-padding:100px 8%;
-}
-
-.section h2{
-text-align:center;
-font-size:36px;
-margin-bottom:60px;
-}
+.section{padding:80px 8%;}
+.section h2{text-align:center;font-size:32px;margin-bottom:50px;}
 
 .features{
 display:grid;
@@ -94,10 +50,7 @@ box-shadow:0 4px 20px rgba(0,0,0,0.06);
 text-align:center;
 }
 
-.card img{
-width:120px;
-margin-bottom:20px;
-}
+.card img{width:90px;margin-bottom:20px;}
 
 .pricing-box{
 background:#f8fafc;
@@ -107,22 +60,30 @@ box-shadow:0 4px 20px rgba(0,0,0,0.05);
 text-align:center;
 }
 
+.video-wrapper{
+max-width:900px;
+margin:0 auto;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 20px 50px rgba(0,0,0,0.2);
+}
+
+video{
+width:100%;
+display:block;
+}
+
 .footer{
 background:#0f172a;
 color:#fff;
 padding:60px 8%;
 text-align:center;
 }
-
-.footer p{
-color:#aaa;
-margin-top:10px;
-}
+.footer p{color:#aaa;margin-top:10px;}
 
 @media(max-width:900px){
 .hero h1{font-size:32px;}
 .hero p{font-size:16px;}
-.section h2{font-size:28px;}
 }
 </style>
 </head>
@@ -134,7 +95,7 @@ margin-top:10px;
 <nav>
 <a href="#features">Features</a>
 <a href="#pricing">Pre-Book</a>
-<a href="#faq">FAQ</a>
+<a href="#video">Watch</a>
 <a href="#pricing" class="btn">Pre-Book ₹499 / ₹999</a>
 </nav>
 </header>
@@ -153,23 +114,39 @@ built for children, women and elderly.
 <a href="#pricing" class="btn" style="background:#111;">Pro ₹999</a>
 </section>
 
-<!-- MAIN PRODUCT SHOWCASE -->
+<!-- PRODUCT IMAGES -->
 
-<section class="section" style="text-align:center;">
+<section class="section">
 <h2>Meet SafeBand</h2>
 
-<div style="margin-top:50px;">
-    <img src="product-main.jpg"
-         alt="SafeBand Main"
-         style="width:100%; max-width:850px; border-radius:30px; box-shadow:0 25px 60px rgba(0,0,0,0.15);">
+<div class="features">
+<div class="card">
+<img src="product-main.jpg" alt="SafeBand Main">
+<p>Premium Safety Design</p>
 </div>
 
-<div style="margin-top:60px;">
-    <img src="colors.jpg"
-         alt="SafeBand Colors"
-         style="width:100%; max-width:650px; border-radius:25px; box-shadow:0 15px 40px rgba(0,0,0,0.1);">
+<div class="card">
+<img src="colors.jpg" alt="SafeBand Colors">
+<p>Available Color Options</p>
+</div>
+</div>
+</section>
+
+<!-- VIDEO SECTION -->
+
+<section id="video" class="section">
+<h2>See SafeBand In Action</h2>
+
+<div class="video-wrapper">
+<video autoplay muted loop playsinline>
+  <source src="videos/safeband-demo.mp4" type="video/mp4">
+</video>
 </div>
 
+<br>
+<div style="text-align:center;">
+<a href="#pricing" class="btn">Reserve Yours Now</a>
+</div>
 </section>
 
 <!-- PRICING -->
@@ -182,13 +159,12 @@ Limited Early Access Reservation. Secure your SafeBand before official launch.
 </p>
 
 <br><br>
-<source src="videos/safeband-demo.mp4" type="video/mp4">
 
 <div class="features">
 
 <div class="pricing-box">
 <h3>🎓 SafeBand Lite (Students)</h3>
-<p style="font-size:30px;margin:15px 0;color:#0f766e;">₹499</p>
+<p style="font-size:28px;margin:15px 0;color:#0f766e;">₹499</p>
 <p>No Screen • Exam-Safe Design</p>
 <br>
 <a href="#" class="btn">Reserve for ₹499</a>
@@ -196,7 +172,7 @@ Limited Early Access Reservation. Secure your SafeBand before official launch.
 
 <div class="pricing-box">
 <h3>👩👴 SafeBand Pro (Women & Elderly)</h3>
-<p style="font-size:30px;margin:15px 0;color:#0f766e;">₹999</p>
+<p style="font-size:28px;margin:15px 0;color:#0f766e;">₹999</p>
 <p>Smart AMOLED Display • Advanced Protection</p>
 <br>
 <a href="#" class="btn">Reserve for ₹999</a>
