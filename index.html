@@ -9,20 +9,46 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
 body{background:#fff;color:#111;}
+
 header{
-display:flex;justify-content:space-between;align-items:center;
-padding:20px 8%;background:#fff;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#fff;
 box-shadow:0 2px 10px rgba(0,0,0,0.05);
-position:sticky;top:0;z-index:1000;
+position:sticky;
+top:0;
+z-index:1000;
 }
-.logo{font-weight:800;font-size:22px;color:#0f766e;}
-nav a{margin:0 15px;text-decoration:none;color:#444;font-weight:500;}
+
+.logo{
+font-weight:800;
+font-size:22px;
+color:#0f766e;
+}
+
+nav a{
+margin:0 15px;
+text-decoration:none;
+color:#444;
+font-weight:500;
+}
+
 .btn{
-background:#0f766e;color:#fff;padding:12px 22px;
-border-radius:30px;text-decoration:none;font-weight:600;
-transition:0.3s;display:inline-block;
+background:#0f766e;
+color:#fff;
+padding:12px 22px;
+border-radius:30px;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+display:inline-block;
 }
-.btn:hover{background:#0c5f5a;}
+
+.btn:hover{
+background:#0c5f5a;
+}
 
 .hero{
 padding:120px 8%;
@@ -30,11 +56,29 @@ text-align:center;
 background:linear-gradient(135deg,#0f766e,#14b8a6);
 color:#fff;
 }
-.hero h1{font-size:48px;font-weight:800;margin-bottom:20px;}
-.hero p{font-size:18px;max-width:750px;margin:auto;line-height:1.6;}
 
-.section{padding:80px 8%;}
-.section h2{text-align:center;font-size:32px;margin-bottom:50px;}
+.hero h1{
+font-size:48px;
+font-weight:800;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+max-width:750px;
+margin:auto;
+line-height:1.6;
+}
+
+.section{
+padding:80px 8%;
+}
+
+.section h2{
+text-align:center;
+font-size:32px;
+margin-bottom:50px;
+}
 
 .features{
 display:grid;
@@ -50,7 +94,10 @@ box-shadow:0 4px 20px rgba(0,0,0,0.06);
 text-align:center;
 }
 
-.card img{width:90px;margin-bottom:20px;}
+.card img{
+width:90px;
+margin-bottom:20px;
+}
 
 .pricing-box{
 background:#f8fafc;
@@ -79,12 +126,17 @@ color:#fff;
 padding:60px 8%;
 text-align:center;
 }
-.footer p{color:#aaa;margin-top:10px;}
+
+.footer p{
+color:#aaa;
+margin-top:10px;
+}
 
 @media(max-width:900px){
 .hero h1{font-size:32px;}
 .hero p{font-size:16px;}
 }
+
 </style>
 </head>
 
@@ -94,8 +146,8 @@ text-align:center;
 <div class="logo">SafeBand</div>
 <nav>
 <a href="#features">Features</a>
-<a href="#pricing">Pre-Book</a>
 <a href="#video">Watch</a>
+<a href="#pricing">Pre-Book</a>
 <a href="#pricing" class="btn">Pre-Book ₹499 / ₹999</a>
 </nav>
 </header>
@@ -120,6 +172,7 @@ built for children, women and elderly.
 <h2>Meet SafeBand</h2>
 
 <div class="features">
+
 <div class="card">
 <img src="product-main.jpg" alt="SafeBand Main">
 <p>Premium Safety Design</p>
@@ -129,24 +182,41 @@ built for children, women and elderly.
 <img src="colors.jpg" alt="SafeBand Colors">
 <p>Available Color Options</p>
 </div>
+
 </div>
 </section>
 
-<!-- VIDEO SECTION -->
+<!-- MAIN BRAND VIDEO -->
 
 <section id="video" class="section">
 <h2>See SafeBand In Action</h2>
 
 <div class="video-wrapper">
-<video autoplay muted loop playsinline>
-  <source src="videos/safeband-demo.mp4" type="video/mp4">
+<video controls>
+<source src="videos/safeband-demo.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>
+
+</section>
+
+<!-- WOMEN NIGHT VIDEO -->
+
+<section class="section">
+<h2>Women Night Safety Protection</h2>
+
+<div class="video-wrapper">
+<video controls>
+<source src="videos/women-night.mp4" type="video/mp4">
+Your browser does not support the video tag.
 </video>
 </div>
 
 <br>
 <div style="text-align:center;">
-<a href="#pricing" class="btn">Reserve Yours Now</a>
+<a href="#pricing" class="btn">Pre-Book SafeBand Pro</a>
 </div>
+
 </section>
 
 <!-- PRICING -->
@@ -184,6 +254,7 @@ Limited Early Access Reservation. Secure your SafeBand before official launch.
 <p style="text-align:center;font-size:13px;color:#888;">
 Limited Launch Batch • Official Pricing Revealed at Launch
 </p>
+
 </section>
 
 <!-- FEATURES -->
